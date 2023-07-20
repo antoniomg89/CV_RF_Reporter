@@ -1,0 +1,8 @@
+# Screenshots folder
+.screenshots/
+
+# Config path
+/Data/config_path.txt
+
+# Exceptions screenshots/
+Exceptions_Screenshots/

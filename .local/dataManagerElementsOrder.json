@@ -1,0 +1,362 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "variable1&State_4",
+        "mongodbClient&StateMachine_1",
+        "PathConfig&StateMachine_1",
+        "isSystemException&StateMachine_1",
+        "dtExceptions&StateMachine_1",
+        "retryProcess&StateMachine_1",
+        "vCase&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "TransactionItem&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "ShouldStop&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_Case",
+        "in_TransactionNumber",
+        "in_Config",
+        "out_TransactionItem",
+        "out_TransactionField1",
+        "out_TransactionField2",
+        "out_TransactionID",
+        "io_dt_TransactionData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "listVendors&Sequence_2",
+        "urlStatus&Sequence_2",
+        "dtExceptions&Sequence_2",
+        "dtVendors&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_mongodbClient",
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_SettingsAndConstants&Sequence_2",
+        "dt_Assets&Sequence_4",
+        "AssetValue&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_pathConfig",
+        "out_Config",
+        "in_ConfigFile",
+        "in_ConfigSheets"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "io_mongodbClient",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/SetTransactionStatus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "QueueRetry&Sequence_8",
+        "ScreenshotPath&Sequence_8"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_BusinessException",
+        "in_Config",
+        "in_TransactionItem",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "in_TransactionField1",
+        "in_TransactionField2",
+        "in_TransactionID",
+        "in_SystemException",
+        "io_ConsecutiveSystemExceptions"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/CloseAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequences/SendMail.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "jobInfo&Sequence_1",
+        "processName&Sequence_1",
+        "processVersion&Sequence_1",
+        "workFlowName&Sequence_1",
+        "codeVendor&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_rowException",
+        "in_mail"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/GetTransactionDataTestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "PathConfig&Sequence_1",
+        "Config&Sequence_1",
+        "TransactionNumber&Sequence_1",
+        "TransactionItem&Sequence_1",
+        "VerificationOutput&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/InitAllApplicationsTestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "PathConfig&Sequence_1",
+        "Config&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequences/GetException.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_rowException",
+        "in_dtExceptions",
+        "in_codeException"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/WorkflowTestCaseTemplate.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "PathConfig&Sequence_2",
+        "Config&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/InitAllSettingsTestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "PathConfig&Sequence_1",
+        "Config&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/ProcessTestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "PathConfig&Sequence_1",
+        "Config&Sequence_1",
+        "TransactionNumber&Sequence_1",
+        "TransactionItem&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/TakeScreenshot.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Screenshot&Sequence_2",
+        "ScreenshotFileInfo&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Folder",
+        "io_FilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/RetryCurrentTransaction.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "in_SystemException",
+        "in_QueueRetry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequences/SaveLog.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "jobInfo&Sequence_1",
+        "folderExists&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_pathLogsDispatcher",
+        "in_log"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequences/ExceptionsHandler.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "mail&Sequence_1",
+        "rowException&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_retryProcess",
+        "in_isSystemException",
+        "in_logMessage",
+        "in_codeException",
+        "io_dtExceptions",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequences/ReadFileExceptions.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "io_dtExceptions",
+        "in_pathExcelExceptions"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequences/ReadConfigPath.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_configFile",
+        "in_pathConfig"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequences/MongoConnect.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "password&Sequence_1",
+        "username&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_mongoCredential",
+        "io_mongodbClient",
+        "in_queueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequences/ReadExcel.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_dtVendors",
+        "in_pathExcel"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequences/TableToList.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_dtVendors",
+        "out_listVendors"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequences/SetDataIntoDB.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_listVendors",
+        "io_mongodbClient"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
