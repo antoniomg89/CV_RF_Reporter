@@ -1,3 +1,11 @@
+## CV_RF_Reporter
+Proceso el cual hace uso de la plantilla REFramework y automatiza:
+- Se connecta con un cluster de MongoDB.
+- Introduce en una lista aquellos vendedores de `Vendors list.xlsx` que tengan datos en la columna 'Total'.
+- Reemplaza en MongoDB el total de aquellos vendedores que existan previamente y si no, crea un nuevo registro.
+
+---
+
 ### Documentation is included in the Documentation folder ###
 
 
